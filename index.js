@@ -25,7 +25,9 @@ function handleSubmit() {
 
 function handleClickDelete() {
   $(".shopping-list").on("click", ".shopping-item-delete", function(event) {
-    this.closest("li").remove();
+    $(this)
+      .closest("li")
+      .remove();
   });
 }
 
